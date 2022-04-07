@@ -1,0 +1,932 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Տեղեկատու</title>
+</head>
+
+<body>
+  <!--  <style>
+    body {
+      background-image: url(/src/bg.png);
+      background-repeat: no-repeat;
+    }
+  </style>  -->
+  <header>
+    <nav class="shadow-sm relative  w-full z-15  bg-white border-b border-gray-100">
+      <div class="border-b-gray-900  container">
+        <div class="relative flex items-center justify-between h-16 md:h-18  lg:h-18">
+          <div class="flex-1 flex items-center justify-between">
+            <div class="flex-shrink-0 flex items-center">
+              <a href="Teghekatu.html">
+                <img class="h-10 md:h-10  lg:h-10" src="https://ladyblog.am/images/site/Ladyblog-logo2.svg" alt="" />
+              </a>
+              <h2>Տեղեկատու</h2>
+            </div>
+            <div class="hidden sm:hidden md:hidden lg:block sm:ml-6">
+              <div class="flex justify-center  text-sm  	space-x-4">
+
+                <a href="/shop" class="px-3 py-2 hover:text-rose-500 ease-in-out duration-300">Այ թի</a>
+                <a href="/" class="px-3 py-2 hover:text-rose-500 ease-in-out duration-300" 
+                  aria-current="page">Առողջություն</a>
+                <a href="/" class="px-3 py-2 hover:text-rose-500 ease-in-out duration-300">Արտադրություն</a>
+                <a href="/contuct" class="px-3 py-2 hover:text-rose-500 ease-in-out duration-300">Գեղեցկություն</a>
+                <a href="/contuct" class="px-3 py-2 hover:text-rose-500 ease-in-out duration-300">Կրթություն</a>
+                <a href="/contuct" class="px-3 py-2 hover:text-rose-500 ease-in-out duration-300">Տուրիզմ</a>
+              </div>
+            </div>
+
+
+
+            <div class="flex items-center">
+              <!--  {/* Menu Button */} -->
+              <button href="#"
+                class=" rounded-full  px-6 py-2  border-2 flex items-center font-bold  border-red-600 hover:bg-white hover:text-red-600 ease-in-out duration-300 bg-red-600 text-white  ">
+                <span class="hidden lg:inline-block"> Գրանցել Նորը </span>
+                <span class="p-0 lg:pl-2 font-bold text-xl ">+</span>
+              </button>
+              <!-- Hanburger Toggle -->
+              <button id="menuToggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+                class="navBar hidden md:inline-flex lg:inline-flex items-center justify-center p-2 rounded-md text-gray-400  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu" aria-expanded="false">
+
+                <span class="sr-only color-red-200">Open main menu</span>
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <!-- Toggle Content  -->
+              <div
+                class="offcanvas offcanvas-end fixed  bottom-0 flex flex-col max-w-full bg-white invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out text-gray-700 top-0 right-0 border-none w-96"
+                tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header flex items-center justify-between p-4">
+                  <h5 class="offcanvas-title mb-0 leading-normal font-semibold" id="offcanvasRightLabel">Ծառայություններ
+                  </h5>
+                  <button type="button"
+                    class="btn-close box-content w-4 h-4 p-2 -my-5 -mr-2 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body flex-grow p-4 overflow-y-auto">
+                  <ul class="text-lg font bold ">
+                    <li class="border-b pb-1"><a href="#">Service Name</a></li>
+                    <li class="border-b pb-1"><a href="#">Service Name</a></li>
+                    <li class="border-b pb-1"><a href="#">Service Name</a></li>
+                    <li class="border-b pb-1"><a href="#">Service Name</a></li>
+                    <li class="border-b pb-1"><a href="#">Service Name</a></li>
+                  </ul>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div
+        class=" hidden bg-gray-900 mx-4 rounded-2xl ease-in-out absolute text-center left-0 right-0 top-20 text-white shadow-lg shadow-gray-600/40"
+        } id="mobile-menu">
+        <div class="wm-port px-2 pt-6 pb-3 space-y-1 justify-center">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+
+          <a href="/shop" class=" block px-3 py-2 rounded-md text-base font-medium">SHOP</a>
+          <a href="/" class="  block px-3 py-2 rounded-md text-base font-medium">PAGES</a>
+          <a href="/" class="  block px-3 py-2 rounded-md text-base font-medium">BLOG</a>
+          <a href="/contact" class="  block px-3 py-2 rounded-md text-base font-medium">CONTUCT</a>
+
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <main>
+      <div class="container xl:pt-16 lg:pt-16 pb-36 pt-8">
+        <div class="w-full h-96 grid grid-cols-4  items-center  ">
+          <div class=" z-20 md:col-span-2 lg:col-span-2 xl:col-span-2 col-span-4">
+            <h3 class="xl:text-7xl lg:text-6xl md:text-6xl sm:text-4xl text-2xl font-bold ">Start exploring
+              <span class="text-rose-500">LadyBlog</span>
+            </h3>
+            <p class="xl:py-10 lg:py-10 py-6 text-gray-500 text-xl">Ծառայություններ, միջոցառումներ, ժամանց ...</p>
+            <div class="relative flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="xl:inline lg:inline md:inline hidden absolute left-7 top-7 bottom-0 h-5 w-5 text-gray-400 "
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              <input type="text"
+                class="placeholder-gray-500 text-lg w-full shadow-md rounded-full border border-gray-400 focus:outline-none  xl:px-16 lg:px-16 md:px-14 px-7 py-6 "
+                placeholder="Ի՞նչ եք փնտրում">
+              <button
+                class="absolute  text-white  font-semibold font-momo right-1 bg-red-600 border-2  border-red-600 hover:bg-white hover:text-red-600 rounded-full py-4 px-7 mr-2 hover:opacity-75 ease-in-out duration-300">
+                <span class="xl:inline lg:inline md:inline hidden ">Փնտրել</span>
+                <span class="xl:hidden lg:hidden md:hidden inline ">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="4">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </span>
+
+              </button>
+            </div>
+          </div>
+          <div class="md:absolute lg:absolute xl:py-0 lg:py-0 pt-8 z-10 right-64 md:col-span-1 lg:col-span-1 xl:col-span-2 col-span-4">
+            <img class="" src="https://finder.createx.studio/img/city-guide/home/hero-img.jpg" width="746" alt="">
+          </div>
+        </div>
+      </div>
+    </main>
+
+  </header>
+
+  <!-- Icons Section -->
+  <section>
+    <div class="container mb-24">
+      <div class="md:flex lg:flex justify-between">
+        <a href="It.html" class="group ">
+          <div
+            class="items-center mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300 pl-2  pr-6 rounded-full py-2">
+            <div
+              class="group-hover:bg-red-100 ease-out duration-300 flex justify-center items-center rounded-full  w-10 h-10">
+              <svg class="h-6 w-6 text-rose-500" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <rect x="3" y="15" width="6" height="6" rx="2" />
+                <rect x="15" y="15" width="6" height="6" rx="2" />
+                <rect x="9" y="3" width="6" height="6" rx="2" />
+                <path d="M6 15v-1a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v1" />
+                <line x1="12" y1="9" x2="12" y2="12" />
+              </svg>
+            </div>
+            <span class="pl-2  font-bold   text-gray-700">Այ Թի</span>
+          </div>
+        </a>
+
+        <a href="#" class="group ">
+          <div
+            class="items-center mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300 pl-2  pr-6 rounded-full py-2">
+            <div
+              class="group-hover:bg-red-100 ease-out duration-300 flex justify-center items-center rounded-full  w-10 h-10">
+              <svg class="h-7 w-7 text-blue-500 " width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <circle cx="7" cy="17" r="2" />
+                <circle cx="17" cy="17" r="2" />
+                <path d="M5 17h-2v-6l2-5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" />
+              </svg>
+            </div>
+            <span class="pl-2  font-bold   text-gray-700">Ավտո, տրանսպորտ</span>
+          </div>
+        </a>
+
+        <a href="#" class="group ">
+          <div
+            class="items-center mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300 pl-2  pr-6 rounded-full py-2">
+            <div
+              class="group-hover:bg-red-100 ease-out duration-300 flex justify-center items-center rounded-full  w-10 h-10">
+              <svg class="h-7 w-7 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
+            </div>
+            <span class="pl-2  font-bold   text-gray-700">Առողջություն</span>
+          </div>
+        </a>
+
+        <a href="#" class="group ">
+          <div
+            class="items-center mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300 pl-2  pr-6 rounded-full py-2">
+            <div
+              class="group-hover:bg-red-100 ease-out duration-300 flex justify-center items-center rounded-full  w-10 h-10">
+              <svg class="h-7 w-7 text-green-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <rect x="3" y="7" width="18" height="13" rx="2" />
+                <polyline points="16 3 12 7 8 3" />
+              </svg>
+            </div>
+            <span class="pl-2  font-bold   text-gray-700">Գովազդ</span>
+          </div>
+        </a>
+
+        <a href="#" class="group ">
+          <div
+            class="items-center mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300 pl-2  pr-6 rounded-full py-2">
+            <div
+              class="group-hover:bg-red-100 ease-out duration-300 flex justify-center items-center rounded-full  w-10 h-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-blue-500" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                <path
+                  d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+              </svg>
+            </div>
+            <span class="pl-2  font-bold   text-gray-700">Կրթություն</span>
+          </div>
+        </a>
+
+        <a href="#" class="group ">
+          <div
+            class="items-center mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300 pl-2  pr-6 rounded-full py-2">
+            <div
+              class="group-hover:bg-red-100 ease-out duration-300 flex justify-center items-center rounded-full  w-10 h-10">
+              <svg class="h-7 w-7 text-yellow-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 0 1-8 0" />
+              </svg>
+            </div>
+            <span class="pl-2  font-bold   text-gray-700">Արտադրություն</span>
+          </div>
+        </a>
+
+      </div>
+      <div class=" md:flex lg:flex justify-between mt-5">
+        <a href="#" class="group ">
+          <div
+            class="items-center mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300 pl-2  pr-6 rounded-full py-2">
+            <div
+              class="group-hover:bg-red-100 ease-out duration-300 flex justify-center items-center rounded-full  w-10 h-10">
+              <svg class="h-6 w-6 text-rose-500" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <rect x="3" y="15" width="6" height="6" rx="2" />
+                <rect x="15" y="15" width="6" height="6" rx="2" />
+                <rect x="9" y="3" width="6" height="6" rx="2" />
+                <path d="M6 15v-1a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v1" />
+                <line x1="12" y1="9" x2="12" y2="12" />
+              </svg>
+            </div>
+            <span class="pl-2  font-bold   text-gray-700">Այ Թի</span>
+          </div>
+        </a>
+
+        <a href="#" class="group ">
+          <div
+            class="items-center mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300 pl-2  pr-6 rounded-full py-2">
+            <div
+              class="group-hover:bg-red-100 ease-out duration-300 flex justify-center items-center rounded-full  w-10 h-10">
+              <svg class="h-7 w-7 text-blue-500 " width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <circle cx="7" cy="17" r="2" />
+                <circle cx="17" cy="17" r="2" />
+                <path d="M5 17h-2v-6l2-5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" />
+              </svg>
+            </div>
+            <span class="pl-2  font-bold   text-gray-700">Ավտո, տրանսպորտ</span>
+          </div>
+        </a>
+
+        <a href="#" class="group ">
+          <div
+            class="items-center mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300 pl-2  pr-6 rounded-full py-2">
+            <div
+              class="group-hover:bg-red-100 ease-out duration-300 flex justify-center items-center rounded-full  w-10 h-10">
+              <svg class="h-7 w-7 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+              </svg>
+            </div>
+            <span class="pl-2  font-bold   text-gray-700">Առողջություն</span>
+          </div>
+        </a>
+
+        <a href="#" class="group ">
+          <div
+            class="items-center mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300 pl-2  pr-6 rounded-full py-2">
+            <div
+              class="group-hover:bg-red-100 ease-out duration-300 flex justify-center items-center rounded-full  w-10 h-10">
+              <svg class="h-7 w-7 text-green-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <rect x="3" y="7" width="18" height="13" rx="2" />
+                <polyline points="16 3 12 7 8 3" />
+              </svg>
+            </div>
+            <span class="pl-2  font-bold   text-gray-700">Գովազդ</span>
+          </div>
+        </a>
+
+        <a href="#" class="group ">
+          <div
+            class="items-center mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300 pl-2  pr-6 rounded-full py-2">
+            <div
+              class="group-hover:bg-red-100 ease-out duration-300 flex justify-center items-center rounded-full  w-10 h-10">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-blue-500" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2">
+                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                <path
+                  d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+              </svg>
+            </div>
+            <span class="pl-2  font-bold   text-gray-700">Կրթություն</span>
+          </div>
+        </a>
+
+        <a href="#" class="group ">
+          <div
+            class="items-center mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300 pl-2  pr-6 rounded-full py-2">
+            <div
+              class="group-hover:bg-red-100 ease-out duration-300 flex justify-center items-center rounded-full  w-10 h-10">
+              <svg class="h-7 w-7 text-yellow-500" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 0 1-8 0" />
+              </svg>
+            </div>
+            <span class="pl-2  font-bold   text-gray-700">Արտադրություն</span>
+          </div>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Special Offer Section Start-->
+  <section>
+
+    <div class="container mb-24">
+      <h2 class="py-8 font-bold text-3xl ">Հատուկ Առաջարկներ</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
+
+        <a href="It.html" class="relative ">
+          <!-- Heart Icon -->
+          <span class="absolute right-2 top-2">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 p-1 text-rose-500 bg-gray-50 rounded-full hover:bg-rose-500 hover:text-white ease-in-out duration-300"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </span>
+          <div href="#" class="rounded-2xl block z-1 overflow-hidden">
+            <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/01.jpg" alt="img">
+          </div>
+          <div class=" py-3  w-full">
+            <p href="#" class="text-gray-700 hover:text-rose-500 duration-300 ease-in-out  text-xl font-bold">About
+              Product</p>
+            <p class="font-medium pt-1 text-sm text-gray-500 ">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </a>
+
+        <a href="It.html" class="relative ">
+          <!-- Heart Icon -->
+          <span class="absolute right-2 top-2">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 p-1 text-rose-500 bg-gray-50 rounded-full hover:bg-rose-500 hover:text-white ease-in-out duration-300"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </span>
+          <div href="#" class="rounded-2xl block z-1 overflow-hidden">
+            <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/01.jpg" alt="img">
+          </div>
+          <div class=" py-3  w-full">
+            <p href="#" class="text-gray-700 hover:text-rose-500 duration-300 ease-in-out  text-xl font-bold">About
+              Product</p>
+            <p class="font-medium pt-1 text-sm text-gray-500 ">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </a>
+
+        <a href="It.html" class="relative ">
+          <!-- Heart Icon -->
+          <span class="absolute right-2 top-2">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 p-1 text-rose-500 bg-gray-50 rounded-full hover:bg-rose-500 hover:text-white ease-in-out duration-300"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </span>
+          <div href="#" class="rounded-2xl block z-1 overflow-hidden">
+            <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/01.jpg" alt="img">
+          </div>
+          <div class=" py-3  w-full">
+            <p href="#" class="text-gray-700 hover:text-rose-500 duration-300 ease-in-out  text-xl font-bold">About
+              Product</p>
+            <p class="font-medium pt-1 text-sm text-gray-500 ">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </a>
+
+        <a href="#" class="relative ">
+          <!-- Heart Icon -->
+          <span class="absolute right-2 top-2">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 p-1 text-rose-500 bg-gray-50 rounded-full hover:bg-rose-500 hover:text-white ease-in-out duration-300"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </span>
+          <div href="#" class="rounded-2xl block z-1 overflow-hidden">
+            <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/01.jpg" alt="img">
+          </div>
+          <div class=" py-3  w-full">
+            <p href="#" class="text-gray-700 hover:text-rose-500 duration-300 ease-in-out  text-xl font-bold">About
+              Product</p>
+            <p class="font-medium pt-1 text-sm text-gray-500 ">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </a>
+        <a href="#" class="relative ">
+          <!-- Heart Icon -->
+          <span class="absolute right-2 top-2">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 p-1 text-rose-500 bg-gray-50 rounded-full hover:bg-rose-500 hover:text-white ease-in-out duration-300"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </span>
+          <div href="#" class="rounded-2xl block z-1 overflow-hidden">
+            <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/01.jpg" alt="img">
+          </div>
+          <div class=" py-3  w-full">
+            <p href="#" class="text-gray-700 hover:text-rose-500 duration-300 ease-in-out  text-xl font-bold">About
+              Product</p>
+            <p class="font-medium pt-1 text-sm text-gray-500 ">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </a>
+        <a href="#" class="relative ">
+          <!-- Heart Icon -->
+          <span class="absolute right-2 top-2">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 p-1 text-rose-500 bg-gray-50 rounded-full hover:bg-rose-500 hover:text-white ease-in-out duration-300"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </span>
+          <div href="#" class="rounded-2xl block z-1 overflow-hidden">
+            <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/01.jpg" alt="img">
+          </div>
+          <div class=" py-3  w-full">
+            <p href="#" class="text-gray-700 hover:text-rose-500 duration-300 ease-in-out  text-xl font-bold">About
+              Product</p>
+            <p class="font-medium pt-1 text-sm text-gray-500 ">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </a>
+        <a href="#" class="relative ">
+          <!-- Heart Icon -->
+          <span class="absolute right-2 top-2">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 p-1 text-rose-500 bg-gray-50 rounded-full hover:bg-rose-500 hover:text-white ease-in-out duration-300"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </span>
+          <div href="#" class="rounded-2xl block z-1 overflow-hidden">
+            <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/01.jpg" alt="img">
+          </div>
+          <div class=" py-3  w-full">
+            <p href="#" class="text-gray-700 hover:text-rose-500 duration-300 ease-in-out  text-xl font-bold">About
+              Product</p>
+            <p class="font-medium pt-1 text-sm text-gray-500 ">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </a>
+        <a href="#" class="relative ">
+          <!-- Heart Icon -->
+          <span class="absolute right-2 top-2">
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8 p-1 text-rose-500 bg-gray-50 rounded-full hover:bg-rose-500 hover:text-white ease-in-out duration-300"
+              fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+          </span>
+          <div href="#" class="rounded-2xl block z-1 overflow-hidden">
+            <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/01.jpg" alt="img">
+          </div>
+          <div class=" py-3  w-full">
+            <p href="#" class="text-gray-700 hover:text-rose-500 duration-300 ease-in-out  text-xl font-bold">About
+              Product</p>
+            <p class="font-medium pt-1 text-sm text-gray-500 ">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Background Section Start -->
+  <section>
+    <div class="mb-24">
+      <div class=" bg-fixed bg-no-repeat w-full"
+        style="background-image: url(http://www.bestbackgroundwallpaper.com/wp-content/uploads/2020/09/low-poly-simple-mountain-landscape-ultra-hd-wallpaper-for-4k-uhd-widescreen-desktop-tablet-smartphone-5f6c9ccaee274.jpg)">
+        <div class="flex items-center h-96 container">
+
+          <div class=" md:flex lg:flex items-center justify-between">
+            <div class="w-full md:w-1/2 lg:w-1/2 text-center md:text-left lg:text-left">
+              <h2 class=" pb-8 font-bold text-3xl text-white">Ներկայացրու գործունեությունդ</h2>
+              <p class="text-gray-300 text-lg">We’re full-service, local agents who know how to find people and home
+                each
+                together. We use online tools with an unmatched search capability to make you smarter and faster.</p>
+            </div>
+            <div class="flex justify-center">
+              <button href="#"
+                class=" rounded-full mt-5 md:mt-0 lg:mt-0   px-16 py-3  border flex items-center  ease-in-out duration-500 text-white hover:opacity-75 hover:text-white  ">
+                Գրանցել Նորը
+                <span class="pl-2 font-bold text-xl ">+</span>
+              </button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+
+  <section class="">
+    <div class="container mb-24 ">
+      <h2 class="py-8 font-bold text-3xl">Մեր Մասին</h2>
+      <div class="md:flex lg:flex justify-between">
+        <div class="w-full md:w-1/2 lg:w-1/2 ">
+          <img class="rounded-2xl" src="https://finder.createx.studio/img/city-guide/home/new-1.jpg" alt="">
+        </div>
+        <div class="w-full md:w-2/5 lg:w-2/5 ">
+          <h3 class="font-bold text-2xl mb-2 md:mb-5 lg:mb-5 mt-5 md:mt-0 lg:mt-0">Մեր Մասին</h3>
+          <ul class="text-gray-500 mb-3">
+            <li>Yerevan, Armenia</li>
+            <li>10:00-20:00</li>
+            <li>+374 (98) 00-00-00</li>
+          </ul>
+          <p class="text-gray-500 text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis pariatur
+            voluptatem cupiditate delectus
+            ex, dolore saepe fugit quae laboriosam sed optio necessitatibus non beatae debitis rerum reiciendis autem
+            asperiores dignissimos!</p>
+          <button href="#"
+            class=" rounded-full my-5  px-6 py-2  border-2 flex items-center font-bold  border-red-600 hover:bg-white hover:text-red-600 ease-in-out duration-300 bg-red-600 text-white ">
+            Գրանցվել Հիմա
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Blog Section Start-->
+  <section>
+
+    <div class="container mb-24">
+      <h2 class="py-8 font-bold text-3xl">Վերջինները բլոգից</h2>
+      <div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6">
+
+          <a href="#" class="relative ">
+            <!-- Heart Icon -->
+            <span class="absolute right-2 top-2">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 p-1 text-rose-500 bg-gray-50 rounded-full hover:bg-rose-500 hover:text-white ease-in-out duration-300"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </span>
+            <div href="#" class="rounded-2xl block z-1 overflow-hidden">
+              <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/01.jpg" alt="img">
+            </div>
+            <div class=" py-3  w-full">
+              <p class="font-bold pt-1 text-xs text-rose-500 ">NAME
+              </p>
+              <p href="#" class="text-gray-700 hover:text-rose-500 duration-300 ease-in-out  text-xl font-bold">About
+                Product</p>
+
+            </div>
+          </a>
+
+          <a href="#" class="relative ">
+            <!-- Heart Icon -->
+            <span class="absolute right-2 top-2">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 p-1 text-rose-500 bg-gray-50 rounded-full hover:bg-rose-500 hover:text-white ease-in-out duration-300"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </span>
+            <div href="#" class="rounded-2xl block z-1 overflow-hidden">
+              <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/01.jpg" alt="img">
+            </div>
+            <div class=" py-3  w-full">
+              <p class="font-bold pt-1 text-xs text-rose-500 ">NAME
+              </p>
+              <p href="#" class="text-gray-700 hover:text-rose-500 duration-300 ease-in-out  text-xl font-bold">About
+                Product</p>
+
+            </div>
+          </a>
+
+
+          <a href="#" class="relative ">
+            <!-- Heart Icon -->
+            <span class="absolute right-2 top-2">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 p-1 text-rose-500 bg-gray-50 rounded-full hover:bg-rose-500 hover:text-white ease-in-out duration-300"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </span>
+            <div href="#" class="rounded-2xl block z-1 overflow-hidden">
+              <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/01.jpg" alt="img">
+            </div>
+            <div class=" py-3  w-full">
+              <p class="font-bold pt-1 text-xs text-rose-500 ">NAME
+              </p>
+              <p href="#" class="text-gray-700 hover:text-rose-500 duration-300 ease-in-out  text-xl font-bold">About
+                Product</p>
+
+            </div>
+          </a>
+
+          <a href="#" class="relative ">
+            <!-- Heart Icon -->
+            <span class="absolute right-2 top-2">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 p-1 text-rose-500 bg-gray-50 rounded-full hover:bg-rose-500 hover:text-white ease-in-out duration-300"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </span>
+            <div href="#" class="rounded-2xl block z-1 overflow-hidden">
+              <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/01.jpg" alt="img">
+            </div>
+            <div class=" py-3  w-full">
+              <p class="font-bold pt-1 text-xs text-rose-500 ">NAME
+              </p>
+              <p href="#" class="text-gray-700 hover:text-rose-500 duration-300 ease-in-out  text-xl font-bold">About
+                Product</p>
+
+            </div>
+          </a>
+
+
+          <a href="#" class="relative ">
+            <!-- Heart Icon -->
+            <span class="absolute right-2 top-2">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 p-1 text-rose-500 bg-gray-50 rounded-full hover:bg-rose-500 hover:text-white ease-in-out duration-300"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </span>
+            <div href="#" class="rounded-2xl block z-1 overflow-hidden">
+              <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/01.jpg" alt="img">
+            </div>
+            <div class=" py-3  w-full">
+              <p class="font-bold pt-1 text-xs text-rose-500 ">NAME
+              </p>
+              <p href="#" class="text-gray-700 hover:text-rose-500 duration-300 ease-in-out  text-xl font-bold">About
+                Product</p>
+
+            </div>
+          </a>
+
+          <a href="#" class="relative ">
+            <!-- Heart Icon -->
+            <span class="absolute right-2 top-2">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 p-1 text-rose-500 bg-gray-50 rounded-full hover:bg-rose-500 hover:text-white ease-in-out duration-300"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </span>
+            <div href="#" class="rounded-2xl block z-1 overflow-hidden">
+              <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/01.jpg" alt="img">
+            </div>
+            <div class=" py-3  w-full">
+              <p class="font-bold pt-1 text-xs text-rose-500 ">NAME
+              </p>
+              <p href="#" class="text-gray-700 hover:text-rose-500 duration-300 ease-in-out  text-xl font-bold">About
+                Product</p>
+
+            </div>
+          </a>
+
+          <a href="#" class="relative ">
+            <!-- Heart Icon -->
+            <span class="absolute right-2 top-2">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 p-1 text-rose-500 bg-gray-50 rounded-full hover:bg-rose-500 hover:text-white ease-in-out duration-300"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </span>
+            <div href="#" class="rounded-2xl block z-1 overflow-hidden">
+              <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/01.jpg" alt="img">
+            </div>
+            <div class=" py-3  w-full">
+              <p class="font-bold pt-1 text-xs text-rose-500 ">NAME
+              </p>
+              <p href="#" class="text-gray-700 hover:text-rose-500 duration-300 ease-in-out  text-xl font-bold">About
+                Product</p>
+
+            </div>
+          </a>
+
+          <a href="#" class="relative ">
+            <!-- Heart Icon -->
+            <span class="absolute right-2 top-2">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 p-1 text-rose-500 bg-gray-50 rounded-full hover:bg-rose-500 hover:text-white ease-in-out duration-300"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+              </svg>
+            </span>
+            <div href="#" class="rounded-2xl block z-1 overflow-hidden">
+              <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/01.jpg" alt="img">
+            </div>
+            <div class=" py-3  w-full">
+              <p class="font-bold pt-1 text-xs text-rose-500 ">NAME
+              </p>
+              <p href="#" class="text-gray-700 hover:text-rose-500 duration-300 ease-in-out  text-xl font-bold">About
+                Product</p>
+
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Mobile Menu -->
+  <div
+    class="mobile-context bg-white border-t py-3 fixed-bottom xl:hidden lg:hidden md:hidden sm:block xs:block block px-8 drop-shadow-[0_-1px_10px_rgba(0,0,0,0.10)]">
+    <div class="flex justify-between">
+
+      <a href="#" type="button">
+        <svg class="h-8 w-8 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+          stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" />
+          <polyline points="5 12 3 12 12 3 21 12 19 12" />
+          <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+          <rect x="10" y="12" width="4" height="4" />
+        </svg>
+      </a>
+
+      <a href="#" type="button">
+        <svg class="h-8 w-8 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+      </a>
+
+      <a href="#" type="button">
+        <svg class="h-8 w-8 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+
+      <a href="#" id="menuToggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+        aria-controls="offcanvasRight" aria-controls="mobile-menu" aria-expanded="false">
+        <svg class="h-8 w-8 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </a>
+
+    </div>
+  </div>
+
+
+  <!-- Footer Start -->
+  <footer class="border-t border-red-600">
+    <div class="container px-2 py-12">
+      <div class="px-6 pt-6">
+        <div class="flex justify-between">
+          <img class="h-10" src="https://ladyblog.am/images/site/Ladyblog-logo2.svg" alt="img">
+          <!-- Icons -->
+          <div class="flex items-center">
+            <a href="#" class="flex items-center">
+              <svg class="h-6 w-6 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+              <span class="px-2 text-gray-800">Facebook</span>
+            </a>
+
+            <a href="#" class="flex items-center">
+              <svg class="h-8 w-8 text-pink-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+              <span class="px-2 text-gray-800">Instagram</span>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="lg:flex block justify-between items-center">
+          <div class="">
+            <h3 class="py-5 font-bold text-2xl">Եղեք տեղեկացված</h3>
+            <p class="text-gray-700">Ձեր կարծիքը շատ կարևոր է մեզ համար, և Ձեր կողմից առաջադրված ցանկացած հարց, առաջարկ
+              կամ դիտողություն պարտադիր արձագանք կստանա:</p>
+          </div>
+
+          <div class="md:mb-6 ">
+            <input type="text" class="w-full  border-b border-gray-700 focus:outline-none py-2 px-1 text-sm"
+              placeholder="Էլ․ Հասցե">
+            <button href="#"
+              class="rounded-full my-5  px-6 py-2  border-2 flex items-center font-bold  border-red-600 hover:bg-white hover:text-red-600 ease-in-out duration-300 bg-red-600 text-white ">
+              Բաժանորդագրվել
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="bg-gray-900 text-center ">
+      <div class="  pt-6 pb-3 text-white">
+        <ul class="lg:flex  inline justify-center">
+          <li class="px-2 ">
+            <a href="#">Կանոնակարգ՝ «Գրապահոց»</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Գաղտնիություն և Դրույթներ</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Նամակ Ձմեռ պապիկին</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Բալիկի սեռի որոշման աղյուսակներ</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Հղիության օրացույց</a>
+          </li>
+        </ul>
+
+        <ul class="block lg:flex    justify-center  mt-2">
+          <li class="px-2 ">
+            <a href="#">Գովազդի պայմաններ</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Հետադարձ կապ</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Գրանցում</a>
+          </li class="px-2 ">
+          <li class="px-2 ">
+            <a href="#">Հայ</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Eng</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Рус</a>
+          </li>
+        </ul>
+        <p class="mt-5 border-t pt-2">Copyright © All rights reserved | Կայքը հանդիսանում է <a class=""
+            href="#">WebMagnet</a>-ի
+          նախագիծ</p>
+      </div>
+    </div>
+
+  </footer>
+  <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
+</body>
+
+</html>

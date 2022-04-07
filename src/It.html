@@ -1,0 +1,894 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Տեղեկատու</title>
+</head>
+
+
+
+<body>
+  <header>
+    <nav class="shadow-sm relative  w-full z-15  bg-white border-b border-gray-100">
+      <div class="border-b-gray-900  container">
+        <div class="relative flex items-center justify-between h-16 md:h-18  lg:h-18">
+          <div class="flex-1 flex items-center justify-between">
+            <div class="flex-shrink-0 flex items-center">
+              <a href="Teghekatu.html"><img class="h-10 md:h-24  lg:h-10"
+                  src="https://ladyblog.am/images/site/Ladyblog-logo2.svg" alt="" /></a>
+              <h2>Տեղեկատու</h2>
+            </div>
+            <div class="hidden sm:hidden md:hidden lg:block sm:ml-6">
+              <div class="flex justify-center  text-sm  	space-x-4">
+                <a href="/shop" class="px-3 py-2 hover:text-rose-500 ease-in-out duration-300">Այ թի</a>
+                <a href="/" class="px-3 py-2 hover:text-rose-500 ease-in-out duration-300"
+                  aria-current="page">Առողջություն</a>
+                <a href="/" class="px-3 py-2 hover:text-rose-500 ease-in-out duration-300">Արտադրություն</a>
+                <a href="/contuct" class="px-3 py-2 hover:text-rose-500 ease-in-out duration-300">Գեղեցկություն</a>
+                <a href="/contuct" class="px-3 py-2 hover:text-rose-500 ease-in-out duration-300">Կրթություն</a>
+                <a href="/contuct" class="px-3 py-2 hover:text-rose-500 ease-in-out duration-300">Տուրիզմ</a>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <!--  {/* Menu Button */} -->
+              <button href="#"
+                class=" rounded-full  px-6 py-2  border-2 flex items-center font-bold  border-red-600 hover:bg-white hover:text-red-600 ease-in-out duration-300 bg-red-600 text-white  ">
+                <span class="hidden lg:inline-block"> Գրանցել Նորը </span>
+                <span class="p-0 md:pl-2 lg:pl-2 font-bold text-xl ">+</span>
+              </button>
+              <!-- Hanburger Toggle -->
+              <button id="menuToggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+                class="navBar hidden md:inline-flex lg:inline-flex items-center justify-center p-2 rounded-md text-gray-400  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only color-red-200">Open main menu</span>
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <!-- Toggle Content  -->
+              <div
+                class="offcanvas offcanvas-end fixed  bottom-0 flex flex-col max-w-full bg-white invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out text-gray-700 top-0 right-0 border-none w-96"
+                tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header flex items-center justify-between p-4">
+                  <h5 class="offcanvas-title mb-0 leading-normal font-semibold" id="offcanvasRightLabel">Ծառայություններ
+                  </h5>
+                  <button type="button"
+                    class="btn-close box-content w-4 h-4 p-2 -my-5 -mr-2 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body flex-grow p-4 overflow-y-auto">
+                  <ul class="text-lg font bold ">
+                    <li class="border-b pb-1"><a href="#">Service Name</a></li>
+                    <li class="border-b pb-1"><a href="#">Service Name</a></li>
+                    <li class="border-b pb-1"><a href="#">Service Name</a></li>
+                    <li class="border-b pb-1"><a href="#">Service Name</a></li>
+                    <li class="border-b pb-1"><a href="#">Service Name</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div
+        class=" hidden bg-gray-900 mx-4 rounded-2xl ease-in-out absolute text-center left-0 right-0 top-20 text-white shadow-lg shadow-gray-600/40"
+        } id="mobile-menu">
+        <div class="wm-port px-2 pt-6 pb-3 space-y-1 justify-center">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+          <a href="/shop" class=" block px-3 py-2 rounded-md text-base font-medium">SHOP</a>
+          <a href="/" class="  block px-3 py-2 rounded-md text-base font-medium">PAGES</a>
+          <a href="/" class="  block px-3 py-2 rounded-md text-base font-medium">BLOG</a>
+          <a href="/contact" class="  block px-3 py-2 rounded-md text-base font-medium">CONTUCT</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>
+    <div class=" container mb-10 mt-5  md:mt-10 lg:mt-10">
+      <div class="md:flex lg:flex items-center justify-between">
+        <div class="">
+          <div class="breadcrumbs flex">
+            <a href="Teghekatu.html" class="flex items-center text-gray-600">
+              Home
+              <span class="font-bold">
+                <svg class="h-3 w-3 text-gray-400 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </a>
+            <span class="text-rose-600">
+              it
+            </span>
+          </div>
+          <h1 class="pt-2 text-gray-800 font-bold text-2xl md:text-3xl lg:text-4xl ">ԱյԹԻ</h1>
+        </div>
+        <div class="banner480x60   ">
+          <a href="#">
+            <img src="/dist/images/banner728x90.gif" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class=" container mb-24">
+      <div class="mb-3 flex items-center">
+        <div class="mr-1">
+          Դասավորել
+        </div>
+        <select
+          class="block text-gray-600  font-semibold  bg-white   hover:border-gray-400 px-4   rounded focus:outline-none focus:shadow-outline">
+          <option>Ըստ համակարգի</option>
+          <option>Սկզբից նորերը</option>
+          <option>Սկզբից հները</option>
+        </select>
+        <hr class="mx-5 w-full">
+      </div>
+      <div class="md:flex  lg:flex justify-between mt-8">
+        <div class="category_banner mr-10 mt-14 border hidden xs:hidden sm:hidden md:block lg:block xl:block ">
+          <a href="#" class="sticky-t">
+            <img src="https://www.5banners.com/store/img/cms/00045.gif" alt="">
+          </a>
+        </div>
+        <div class=" w-full md:w-3/4 lg:w-3/4 md:pr-10 lg:pr-10">
+
+          <div href="#" class=" p-4 shadow-md hover:shadow-lg group bg-white rounded-lg border  py-8 mb-6">
+            <a href="#" >
+              <div  class="flex justify-between md:flex-row w-full ">
+                <!-- Company logo -->
+                <div class="w-1/5 items-center md:flex lg:flex ">
+                  <img class=" w-full" src="https://www.logodesignprofs.com/assets/images/portfolio/logo/02.jpg" alt="">
+                </div>
+  
+                <div class="w-4/5 flex flex-col justify-evenly pl-4 ">
+                  <!-- Company  address -->
+                  <div>
+                    <h5
+                      class="mb-2 text-base md:text-xl lg:text-2xl group-hover:text-rose-500 duration-300 font-bold text-gray-900">
+                     Company Name
+                    </h5>
+                    <div class=" flex items-center flex-wrap">
+                      <div class="flex mr-3">
+                        <svg class="h-4 w-4 mr-1 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                          </path>
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <p class="font-bold  text-gray-400 text-sm  ">Վանթյան 61Ա </p>
+                      </div>
+  
+                      <div class="rating-counter font-bold  text-gray-400 text-sm ">(12 reviews)</div>
+                      <div class="rating-counter flex items-center text-gray-400   mx-2 text-sm" data-toggle="tooltip"
+                        data-placement="top" title="Այցելություններ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 font-bold  " fill="none"
+                          viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg> 276
+                      </div>
+                      <div class="rating-counter flex items-center text-gray-400   mx-2  text-sm" data-toggle="tooltip"
+                        data-placement="top" title="Դիտումներ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2  font-bold" viewBox="0 0 20 20"
+                          fill="currentColor">
+                          <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                          <path fill-rule="evenodd"
+                            d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                            clip-rule="evenodd" />
+                        </svg> 692
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Company Links -->
+                  <div class="mt-8 hidden md:flex lg:flex  text-xs ">
+                    <div
+                      class="items-center mr-0 md:mr-3 lg:mr-3  mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-5 py-2">
+                      <span class="    text-gray-700">Այ Թի</span>
+                    </div>
+                    <div
+                      class="items-center mr-0 md:mr-3 lg:mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-5 py-2">
+                      <span class="   text-gray-700">Ավտո, տրանսպորտ</span>
+                    </div>
+                    <div
+                      class="items-center mr-0 md:mr-3 lg:mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-5 py-2">
+                      <span class="  text-gray-700">Այ Թի</span>
+                    </div>
+                    <div
+                      class="items-center mr-0 md:mr-3 lg:mr-3  mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-5 py-2">
+                      <span class="   text-gray-700">Ավտո, տրանսպորտ</span>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+              <!-- Company mobile Links -->
+              <div class="mt-8 flex flex-wrap  md:hidden lg:hidden  text-xs ">
+                <div
+                  class="items-center mr-3  mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+                  <span class="    text-gray-700">Այ Թի</span>
+                </div>
+                <div
+                  class="items-center mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+                  <span class="   text-gray-700">Ավտո, տրանսպորտ</span>
+                </div>
+                <div
+                  class="items-center mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+                  <span class="  text-gray-700">Այ Թի</span>
+                </div>
+                <div
+                class="items-center mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+                <span class="  text-gray-700">Այ Թի</span>
+              </div>
+              <div
+                class="items-center mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+                <span class="   text-gray-700">Ավտո, տրանսպորտ</span>
+              </div>
+              <div
+              class="items-center mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+              <span class="  text-gray-700">Այ Թի</span>
+            </div>
+            
+                
+                
+              </div>
+            </a>
+           
+          </div>
+        
+          <div href="#" class=" p-4 shadow-md hover:shadow-lg group bg-white rounded-lg border  py-8 mb-6">
+            <a href="#" >
+              <div  class="flex justify-between md:flex-row w-full ">
+                <!-- Company logo -->
+                <div class="w-1/5 items-center md:flex lg:flex ">
+                  <img class=" w-full" src="  https://webmagnet.org/images/logo/webmagnet.svg" alt="">
+                </div>
+  
+                <div class="w-4/5 flex flex-col justify-evenly pl-4 ">
+                  <!-- Company  address -->
+                  <div>
+                    <h5
+                      class="mb-2 text-base md:text-xl lg:text-2xl group-hover:text-rose-500 duration-300 font-bold text-gray-900">
+                     Company Name Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, quae.
+                    </h5>
+                    <div class=" flex items-center flex-wrap">
+                      <div class="flex mr-3">
+                        <svg class="h-4 w-4 mr-1 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                          </path>
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <p class="font-bold  text-gray-400 text-sm  ">Վանթյան 61Ա </p>
+                      </div>
+  
+                      <div class="rating-counter font-bold  text-gray-400 text-sm ">(12 reviews)</div>
+                      <div class="rating-counter flex items-center text-gray-400   mx-2 text-sm" data-toggle="tooltip"
+                        data-placement="top" title="Այցելություններ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 font-bold  " fill="none"
+                          viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg> 276
+                      </div>
+                      <div class="rating-counter flex items-center text-gray-400   mx-2  text-sm" data-toggle="tooltip"
+                        data-placement="top" title="Դիտումներ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2  font-bold" viewBox="0 0 20 20"
+                          fill="currentColor">
+                          <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                          <path fill-rule="evenodd"
+                            d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                            clip-rule="evenodd" />
+                        </svg> 692
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Company Links -->
+                  <div class="mt-8 hidden md:flex lg:flex  text-xs ">
+                    <div
+                      class="items-center mr-0 md:mr-3 lg:mr-3  mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-5 py-2">
+                      <span class="    text-gray-700">Այ Թի</span>
+                    </div>
+                    <div
+                      class="items-center mr-0 md:mr-3 lg:mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-5 py-2">
+                      <span class="   text-gray-700">Ավտո, տրանսպորտ</span>
+                    </div>
+                    <div
+                      class="items-center mr-0 md:mr-3 lg:mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-5 py-2">
+                      <span class="  text-gray-700">Այ Թի</span>
+                    </div>
+                    <div
+                      class="items-center mr-0 md:mr-3 lg:mr-3  mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-5 py-2">
+                      <span class="   text-gray-700">Ավտո, տրանսպորտ</span>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+              <!-- Company mobile Links -->
+              <div class="mt-8 flex flex-wrap  md:hidden lg:hidden  text-xs ">
+                <div
+                  class="items-center mr-3  mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+                  <span class="    text-gray-700">Այ Թի</span>
+                </div>
+                <div
+                  class="items-center mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+                  <span class="   text-gray-700">Ավտո, տրանսպորտ</span>
+                </div>
+                <div
+                  class="items-center mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+                  <span class="  text-gray-700">Այ Թի</span>
+                </div>
+                <div
+                class="items-center mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+                <span class="  text-gray-700">Այ Թի</span>
+              </div>
+              <div
+                class="items-center mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+                <span class="   text-gray-700">Ավտո, տրանսպորտ</span>
+              </div>
+              <div
+              class="items-center mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+              <span class="  text-gray-700">Այ Թի</span>
+            </div>
+            
+                
+                
+              </div>
+            </a>
+           
+          </div>
+       
+          <div href="#" class=" p-4 shadow-md hover:shadow-lg group bg-white rounded-lg border  py-8 mb-6">
+            <a href="#" >
+              <div  class="flex justify-between md:flex-row w-full ">
+                <!-- Company logo -->
+                <div class="w-1/5 items-center md:flex lg:flex ">
+                  <img class=" w-full" src="   https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzPGAPATT94AumnLo87OaVFJ-5oQulsCUFZ9cKgVcwYpqPfRTxw-GseRdIMmglmHYiLp0&usqp=CAU" alt="">
+                </div>
+  
+                <div class="w-4/5 flex flex-col justify-evenly pl-4 ">
+                  <!-- Company  address -->
+                  <div>
+                    <h5
+                      class="mb-2 text-base md:text-xl lg:text-2xl group-hover:text-rose-500 duration-300 font-bold text-gray-900">
+                     Company Name
+                    </h5>
+                    <div class=" flex items-center flex-wrap">
+                      <div class="flex mr-3">
+                        <svg class="h-4 w-4 mr-1 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                          </path>
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <p class="font-bold  text-gray-400 text-sm  ">Վանթյան 61Ա </p>
+                      </div>
+  
+                      <div class="rating-counter font-bold  text-gray-400 text-sm ">(12 reviews)</div>
+                      <div class="rating-counter flex items-center text-gray-400   mx-2 text-sm" data-toggle="tooltip"
+                        data-placement="top" title="Այցելություններ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1 font-bold  " fill="none"
+                          viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                          <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg> 276
+                      </div>
+                      <div class="rating-counter flex items-center text-gray-400   mx-2  text-sm" data-toggle="tooltip"
+                        data-placement="top" title="Դիտումներ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2  font-bold" viewBox="0 0 20 20"
+                          fill="currentColor">
+                          <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                          <path fill-rule="evenodd"
+                            d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+                            clip-rule="evenodd" />
+                        </svg> 692
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Company Links -->
+                  <div class="mt-8 hidden md:flex lg:flex  text-xs ">
+                    <div
+                      class="items-center mr-0 md:mr-3 lg:mr-3  mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-5 py-2">
+                      <span class="    text-gray-700">Այ Թի</span>
+                    </div>
+                    <div
+                      class="items-center mr-0 md:mr-3 lg:mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-5 py-2">
+                      <span class="   text-gray-700">Ավտո, տրանսպորտ</span>
+                    </div>
+                    <div
+                      class="items-center mr-0 md:mr-3 lg:mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-5 py-2">
+                      <span class="  text-gray-700">Այ Թի</span>
+                    </div>
+                    <div
+                      class="items-center mr-0 md:mr-3 lg:mr-3  mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-5 py-2">
+                      <span class="   text-gray-700">Ավտո, տրանսպորտ</span>
+                    </div>
+                  </div>
+  
+                </div>
+              </div>
+  
+              <!-- Company mobile Links -->
+              <div class="mt-8 flex flex-wrap  md:hidden lg:hidden  text-xs ">
+                <div
+                  class="items-center mr-3  mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+                  <span class="    text-gray-700">Այ Թի</span>
+                </div>
+                <div
+                  class="items-center mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+                  <span class="   text-gray-700">Ավտո, տրանսպորտ</span>
+                </div>
+                <div
+                  class="items-center mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+                  <span class="  text-gray-700">Այ Թի</span>
+                </div>
+                <div
+                class="items-center mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+                <span class="  text-gray-700">Այ Թի</span>
+              </div>
+              <div
+                class="items-center mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+                <span class="   text-gray-700">Ավտո, տրանսպորտ</span>
+              </div>
+              <div
+              class="items-center mr-3 mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-3 py-2">
+              <span class="  text-gray-700">Այ Թի</span>
+            </div>
+            
+                
+                
+              </div>
+            </a>
+           
+          </div>
+        </div>
+        <!-- Form start -->
+        <div class=" hidden md:inline-block lg:inline-block mt-10 md:mt-0 lg:mt-0 w-full md:w-1/4 lg:w-1/4 ">
+          <form id="" class="mb-4 bg-gray-50 rounded-xl shadow-xl border-2 border-gray-100 p-4">
+            <h4 class="mb-2 text-lg font-semibold">Ֆիլտրեր</h4>
+            <!-- Row -->
+            <input class="px-1 py-2 w-full focus:outline-none " type="text" name="search"
+              placeholder="What are you looking for?" value="">
+            <!-- Row / End -->
+            <hr>
+            <!-- Type -->
+            <h5 class="my-2 text-lg font-semibold">Բաժիններ</h5>
+            <div class="overflow-auto h-64">
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Այ թի</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Առողջություն</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Այ թի</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Առողջություն</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Այ թի</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Առողջություն</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Այ թի</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Առողջություն</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Այ թի</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Առողջություն</label>
+              </div>
+            </div>
+            <br>
+            <!-- More Search Options -->
+            <h5 class="my-2 text-lg font-semibold">Գործունեության տեսակ</h5>
+            <div class="overflow-auto h-64 bg-scroll">
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Այ թի</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Առողջություն</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Այ թի</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Առողջություն</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Այ թի</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Առողջություն</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Այ թի</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Առողջություն</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Այ թի</label>
+              </div>
+              <div class="flex items-center pb-1">
+                <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                <label class="text-gray-600  font-semibold">Առողջություն</label>
+              </div>
+            </div>
+            <!-- Checkboxes / End -->
+            <div class="">
+              <!-- Type -->
+              <div class="pt-3">
+                <select name="city"
+                  class="block text-gray-600  font-semibold w-full bg-white border border-gray-300 hover:border-gray-400 px-6 py-3  rounded shadow  focus:outline-none focus:shadow-outline">
+                  <option value="" class="text-gray-600 ">Ընտրել քաղաքը</option>
+                  <option value="">Գյումրի</option>
+                  <option value="">Երևան</option>
+                  <option value="">Ախուրյան</option>
+                  <option value="">Goris</option>
+                  <option value="">Sisian</option>
+                </select>
+              </div>
+            </div>
+            <!-- More Search Options / End -->
+            <button href="#"
+              class="rounded-full w-full  my-5  px-6 py-2  border-2 flex justify-center items-center font-bold  border-red-600 hover:bg-white hover:text-red-600 ease-in-out duration-300 bg-red-600 text-white ">
+              Ֆիլտրել
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile Form -->
+  <div>
+    <!-- Button  -->
+    <button type="button" class="bg-red-100 p-1.5 rounded-sm fixed  bottom-16 right-6 md:hidden lg:hidden inline-block "
+      data-bs-toggle="modal" data-bs-target="#exampleModalScrollable">
+      <svg class="h-8 w-8 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+        stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" />
+        <circle cx="14" cy="6" r="2" />
+        <line x1="4" y1="6" x2="12" y2="6" />
+        <line x1="16" y1="6" x2="20" y2="6" />
+        <circle cx="8" cy="12" r="2" />
+        <line x1="4" y1="12" x2="6" y2="12" />
+        <line x1="10" y1="12" x2="20" y2="12" />
+        <circle cx="17" cy="18" r="2" />
+        <line x1="4" y1="18" x2="15" y2="18" />
+        <line x1="19" y1="18" x2="20" y2="18" />
+      </svg>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+      id="exampleModalScrollable" tabindex="-1" aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable relative w-auto pointer-events-none">
+        <div
+          class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+          <!-- Title And Close buttun -->
+          <div
+            class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+            <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalScrollableLabel">
+              Ֆիլտրեր
+            </h5>
+            <button type="button"
+              class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+              data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!-- Form Start -->
+          <div class="modal-body relative p-4">
+            <form id="" class="p-4">
+
+
+              <input class="px-1 py-2 w-full border-b focus:outline-none " type="text" name="search"
+                placeholder="What are you looking for?" value="">
+
+
+              <!-- Type -->
+              <h5 class="my-2 text-lg font-semibold">Բաժիններ</h5>
+              <div class="overflow-auto h-64">
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Այ թի</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Առողջություն</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Այ թի</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Առողջություն</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Այ թի</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Առողջություն</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Այ թի</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Առողջություն</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Այ թի</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Առողջություն</label>
+                </div>
+              </div>
+
+              <!-- More Search Options -->
+              <h5 class="my-2 text-lg font-semibold">Գործունեության տեսակ</h5>
+              <div class="overflow-auto h-64 bg-scroll">
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Այ թի</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Առողջություն</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Այ թի</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Առողջություն</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Այ թի</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Առողջություն</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Այ թի</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Առողջություն</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500 h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Այ թի</label>
+                </div>
+                <div class="flex items-center pb-1">
+                  <input class="accent-pink-500  h-4 w-4 mr-1" type="checkbox">
+                  <label class="text-gray-600  font-semibold">Առողջություն</label>
+                </div>
+              </div>
+              <!-- Checkboxes / End -->
+              <div class="">
+                <!-- Type -->
+                <div class="pt-3">
+                  <select name="city"
+                    class="block text-gray-600  font-semibold w-full bg-white border border-gray-300 hover:border-gray-400 px-6 py-3  rounded shadow  focus:outline-none focus:shadow-outline">
+                    <option value="" class="text-gray-600 ">Ընտրել քաղաքը</option>
+                    <option value="">Գյումրի</option>
+                    <option value="">Երևան</option>
+                    <option value="">Ախուրյան</option>
+                    <option value="">Goris</option>
+                    <option value="">Sisian</option>
+                  </select>
+                </div>
+              </div>
+              <!-- More Search Options / End -->
+              <button href="#"
+                class="rounded-full w-full  my-5  px-6 py-2  border-2 flex justify-center items-center font-bold  border-red-600 hover:bg-white hover:text-red-600 ease-in-out duration-300 bg-red-600 text-white ">
+                Ֆիլտրել
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Mobile Menu -->
+  <section>
+    <div
+      class="mobile-context bg-white border-t py-3 fixed-bottom xl:hidden lg:hidden md:hidden sm:block xs:block block px-8 drop-shadow-[0_-1px_10px_rgba(0,0,0,0.10)]">
+      <div class="flex justify-between">
+
+        <a href="#" type="button">
+          <svg class="h-8 w-8 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+            stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" />
+            <polyline points="5 12 3 12 12 3 21 12 19 12" />
+            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+            <rect x="10" y="12" width="4" height="4" />
+          </svg>
+        </a>
+
+        <a href="#" type="button">
+          <svg class="h-8 w-8 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </a>
+
+        <a href="#" type="button">
+          <svg class="h-8 w-8 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </a>
+
+        <a href="#" id="menuToggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight" aria-controls="mobile-menu" aria-expanded="false">
+          <svg class="h-8 w-8 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Start -->
+  <footer class="border-t border-red-600">
+    <div class="container px-2 py-12">
+      <div class="px-6 pt-6">
+        <div class="flex justify-between">
+          <img class="h-10" src="https://ladyblog.am/images/site/Ladyblog-logo2.svg" alt="img">
+          <!-- Icons -->
+          <div class="flex items-center">
+            <a href="#" class="flex items-center">
+              <svg class="h-6 w-6 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+              <span class="px-2 text-gray-800">Facebook</span>
+            </a>
+
+            <a href="#" class="flex items-center">
+              <svg class="h-8 w-8 text-pink-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+              <span class="px-2 text-gray-800">Instagram</span>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="lg:flex block justify-between items-center">
+          <div class="">
+            <h3 class="py-5 font-bold text-2xl">Եղեք տեղեկացված</h3>
+            <p class="text-gray-700">Ձեր կարծիքը շատ կարևոր է մեզ համար, և Ձեր կողմից առաջադրված ցանկացած հարց, առաջարկ
+              կամ դիտողություն
+              պարտադիր արձագանք կստանա:</p>
+          </div>
+
+          <div class="md:mb-6 ">
+            <input type="text" class="w-full  border-b border-gray-700 focus:outline-none py-2 px-1 text-sm"
+              placeholder="Էլ․ Հասցե">
+            <button href="#"
+              class="rounded-full my-5  px-6 py-2  border-2 flex items-center font-bold  border-red-600 hover:bg-white hover:text-red-600 ease-in-out duration-300 bg-red-600 text-white ">
+              Բաժանորդագրվել
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="bg-red-600 text-center ">
+      <div class="  pt-6 pb-3 text-white">
+        <ul class="lg:flex  inline justify-center">
+          <li class="px-2 ">
+            <a href="#">Կանոնակարգ՝ «Գրապահոց»</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Գաղտնիություն և Դրույթներ</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Նամակ Ձմեռ պապիկին</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Բալիկի սեռի որոշման աղյուսակներ</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Հղիության օրացույց</a>
+          </li>
+        </ul>
+
+        <ul class="block lg:flex  inline  justify-center  mt-2">
+          <li class="px-2 ">
+            <a href="#">Գովազդի պայմաններ</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Հետադարձ կապ</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Գրանցում</a>
+          </li class="px-2 ">
+          <li class="px-2 ">
+            <a href="#">Հայ</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Eng</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Рус</a>
+          </li>
+        </ul>
+        <p class="mt-5 border-t pt-2">Copyright © All rights reserved | Կայքը հանդիսանում է <a class=""
+            href="#">WebMagnet</a>-ի
+          նախագիծ</p>
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
+</body>
+
+</html>

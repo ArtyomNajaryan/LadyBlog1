@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    margin:0 auto;
+    padding: 0 25px
+  }
+  .company {
+    background-color: theme('colors.white');
+    border-radius: theme('borderRadius.lg');
+    box-shadow:  theme('boxShadow.md');
+    transition:300ms;
+     /* dark:bg-gray-800 dark:border-gray-700"*/
+  }
+  .company:hover {
+    box-shadow:  theme('boxShadow.lg');
+  }
+  .company:hover h5 {
+    transition:300ms;
+  }
+  .company:hover h5 {
+    color: theme('colors.rose.500');
+  }
+
+  
+  .company-logo>img{
+    width:101px; 
+    max-width:101px
+  }
+
+  .company_name {
+    margin:0 auto;
+    padding: 0 25px
+  }
+
+  .company_meta {
+    margin:0 auto;
+    padding: 0 25px
+  }
+  /* ... */
+}

@@ -1,0 +1,1004 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <title>Տեղեկատու</title>
+</head>
+
+<body class="will-change-scroll">
+
+  <header>
+    <nav class="shadow-sm relative  w-full z-15  bg-white border-b border-gray-100">
+      <div class="border-b-gray-900  container">
+        <div class="relative flex items-center justify-between h-16 md:h-18  lg:h-18">
+          <div class="flex-1 flex items-center justify-between">
+            <div class="flex-shrink-0 flex items-center">
+              <a href="Teghekatu.html"><img class="h-10 md:h-10  lg:h-10"
+                  src="https://ladyblog.am/images/site/Ladyblog-logo2.svg" alt="" /></a>
+              <h2>Տեղեկատու</h2>
+            </div>
+            <div class="hidden sm:hidden md:hidden lg:block sm:ml-6 ">
+              <!-- Search Input -->
+              <div
+                class="flex  items-center focus:outline-none border border-gray-300 rounded-md overflow-hidden  my-1  font-medium  leading-tight   shadow-lg  focus:ring-0  active:shadow-lg active:text-white transition duration-150 ease-in-out   whitespace-nowrap">
+
+                <input type="text" class="bg-white w-96   p-3 focus:outline-none border-r"
+                  placeholder="Ի՞նչ եք փնտրում">
+
+                <select
+                  class=" flex items-center justify-between  w-48 bg-white   text-gray-400 p-3 focus:outline-none">
+                  <option class="text-gray-700" value="">Ո՞ր բաժնում</option>
+                  <option class="text-gray-700" value="">gdfgdf gdfgdf gdf</option>
+                  <option class="text-gray-700">g dfgdf gdfg</option>
+                </select>
+
+                <button type="submit" class="bg-rose-600 text-white cursor-pointer   py-3  px-4 ">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </button>
+
+              </div>
+            </div>
+
+
+
+            <div class="flex items-center">
+              <!--  {/* Menu Button */} -->
+              <button href="#"
+                class=" rounded-full  px-6 py-2  border-2 flex items-center font-bold  border-red-600 hover:bg-white hover:text-red-600 ease-in-out duration-300 bg-red-600 text-white  ">
+                <span class="hidden lg:inline-block"> Գրանցել Նորը </span>
+                <span class="p-0  lg:pl-2 font-bold text-xl ">+</span>
+              </button>
+              <!-- Hanburger Toggle -->
+              <button id="menuToggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+                class="navBar hidden md:inline-flex lg:inline-flex items-center justify-center p-2 rounded-md text-gray-400  focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                aria-controls="mobile-menu" aria-expanded="false">
+
+                <span class="sr-only color-red-200">Open main menu</span>
+                <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+              <!-- Toggle Content  -->
+              <div
+                class="offcanvas offcanvas-end fixed  bottom-0 flex flex-col max-w-full bg-white invisible bg-clip-padding shadow-sm outline-none transition duration-300 ease-in-out text-gray-700 top-0 right-0 border-none w-96"
+                tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header flex items-center justify-between p-4">
+                  <h5 class="offcanvas-title mb-0 leading-normal font-semibold" id="offcanvasRightLabel">Ծառայություններ
+                  </h5>
+                  <button type="button"
+                    class="btn-close box-content w-4 h-4 p-2 -my-5 -mr-2 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                    data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body flex-grow p-4 overflow-y-auto">
+                  <ul class="text-lg font bold ">
+                    <li class="border-b pb-1"><a href="#">Service Name</a></li>
+                    <li class="border-b pb-1"><a href="#">Service Name</a></li>
+                    <li class="border-b pb-1"><a href="#">Service Name</a></li>
+                    <li class="border-b pb-1"><a href="#">Service Name</a></li>
+                    <li class="border-b pb-1"><a href="#">Service Name</a></li>
+                  </ul>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div
+        class=" hidden bg-gray-900 mx-4 rounded-2xl ease-in-out absolute text-center left-0 right-0 top-20 text-white shadow-lg shadow-gray-600/40"
+        } id="mobile-menu">
+        <div class="wm-port px-2 pt-6 pb-3 space-y-1 justify-center">
+          <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+
+          <a href="/shop" class=" block px-3 py-2 rounded-md text-base font-medium">SHOP</a>
+          <a href="/" class="  block px-3 py-2 rounded-md text-base font-medium">PAGES</a>
+          <a href="/" class="  block px-3 py-2 rounded-md text-base font-medium">BLOG</a>
+          <a href="/contact" class="  block px-3 py-2 rounded-md text-base font-medium">CONTUCT</a>
+
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <section>
+    <div class=" container mb-16 mt-5  md:mt-10 lg:mt-10">
+      <div class="md:flex lg:flex items-center justify-between">
+        <div class="">
+          <div class="breadcrumbs flex">
+            <a href="Teghekatu.html" class="flex items-center text-gray-600">
+              Home
+              <span class="font-bold">
+                <svg class="h-3 w-3 text-gray-400 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </a>
+
+            <a href="Teghekatu.html" class="flex items-center text-gray-600">
+              Category
+              <span class="font-bold">
+                <svg class="h-3 w-3 text-gray-400 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </span>
+            </a>
+            <span class="text-rose-600">
+              Hotel esinch
+            </span>
+          </div>
+          <h1 class="pt-2 text-gray-800 font-bold text-2xl md:text-3xl lg:text-4xl ">Berlin Business Hotel</h1>
+        </div>
+
+        <div class="banner480x60  ">
+          <a href="#">
+            <img src="/dist/images/banner728x90.gif" alt="">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Gallery Section -->
+
+  <section>
+    <div class="container ">
+      <div class="grid md:grid-flow-col lg:grid-flow-col gap-4 justify-between">
+        <div href="#" class="rounded-2xl  block z-1 overflow-hidden object-cover object-center w-full h-full ">
+          <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/09.jpg" alt="img">
+        </div>
+        <div href="#" class="rounded-2xl  block z-1 overflow-hidden object-cover object-center w-full h-full ">
+          <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/05.jpg" alt="img">
+        </div>
+        <div href="#" class="rounded-2xl  block z-1 overflow-hidden object-cover object-center w-full h-full ">
+          <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/11.jpg" alt="img">
+        </div>
+        <div href="#" class="rounded-2xl  block z-1 overflow-hidden object-cover object-center w-full h-full ">
+          <img class="card-zoom" src="https://finder.createx.studio/img/city-guide/catalog/05.jpg" alt="img">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container mb-24 mt-10 md:mt-24 lg:mt-18 md:flex lg:flex justify-between">
+      <!-- Left part -->
+      <div class="w-full md:w-4/6 lg:w-4/6	  border-gray-100 ">
+
+        <div class=" flex items-center mb-3 pb-3 border-b">
+          <img src="https://finder.createx.studio/img/city-guide/brands/hotel.svg" width="80" alt="img">
+          <div class="ml-8">
+            <h2 class=" mb-2  font-bold text-3xl"> Berlin Business Hotel</h2>
+            <ul class="flex ">
+              <!-- reviews -->
+              <li class="  flex items-center  ">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-1 text-yellow-500" viewBox="0 0 20 20"
+                  fill="currentColor">
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                <span class="text-gray-700 text-lg mr-1 font-semibold">
+                  4.9
+                </span>
+                <span class="text-gray-500 text-lg font-medium">
+                  (48)
+                </span>
+              </li>
+
+              <!-- location -->
+              <li class="mb-1 flex items-center">
+                <svg class="h-6 w-6 text-gray-400 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span class="text-gray-500 font-medium">Yerevan, Abovyan str. </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Best Offer -->
+        <div class="mt-8">
+
+          <div class="">
+            <h3 class="pb-3 text-2xl font-bold">Լավագույն Առաջարկներ</h3>
+            <p class="text-xl mb-12 font-light text-gray-700">Lorem tincidunt lectus vitae id vulputate diam quam.
+              Imperdiet non scelerisque turpis sed etiam ultrices. Blandit mollis dignissim egestas consectetur
+              porttitor.
+              Vulputate dolor pretium, dignissim eu augue sit ut convallis. Lectus est, magna urna feugiat sed ultricies
+              sed in lacinia. Fusce potenti sit id pharetra vel ornare. Vestibulum sed tellus ullamcorper arcu.</p>
+          </div>
+
+          <div class=" mb-5 w-full rounded-xl shadow-md border border-gray-200 px-5 bg-yellow-50 py-3">
+            <h4 class="text-xl my-3 font-semibold">Առաջարկ hamar 1</h4>
+            <p class="text-gray-600 font-medium text-lg ">15 օր առաջին էջում, ընդմիշտ կայքում՝ 20.000 դրամ Lorem ipsum
+              dolor sit amet contetur adipisicing elit. Adipisci, atque distinctio corporis molestiae eos porro tenetur
+              sequi hic excepturi dignissimos numquam quos voluptates quasi, impedit voluptas labore beatae asperiores
+              quas?
+            </p>
+            <h6 class="text-2xl py-3 font-bold text-rose-600 ">1900 <small>դր</small></h6>
+          </div>
+
+          <div class=" mb-5 w-full rounded-xl shadow-md border border-gray-200 px-5 bg-yellow-50 py-3">
+            <h4 class="text-xl my-3 font-semibold">Առաջարկ hamar 1</h4>
+            <p class="text-gray-600 font-medium text-lg ">15 օր առաջին էջում, ընդմիշտ կայքում՝ 20.000 դրամ Lorem ipsum
+              dolor sit amet contetur adipisicing elit. Adipisci, atque distinctio corporis molestiae eos porro tenetur
+              sequi hic excepturi dignissimos numquam quos voluptates quasi, impedit voluptas labore beatae asperiores
+              quas?
+            </p>
+            <h6 class="text-2xl py-3 font-bold text-rose-600 ">1900 <small>դր</small></h6>
+          </div>
+
+          <div class=" mb-5 w-full rounded-xl shadow-md border border-gray-200 px-5 bg-yellow-50 py-3">
+            <h4 class="text-xl my-3 font-semibold">Առաջարկ hamar 1</h4>
+            <p class="text-gray-600 font-medium text-lg ">15 օր առաջին էջում, ընդմիշտ կայքում՝ 20.000 դրամ Lorem ipsum
+              dolor sit amet contetur adipisicing elit. Adipisci, atque distinctio corporis molestiae eos porro tenetur
+              sequi hic excepturi dignissimos numquam quos voluptates quasi, impedit voluptas labore beatae asperiores
+              quas?
+            </p>
+            <h6 class="text-2xl py-3 font-bold text-rose-600 ">1900 <small>դր</small></h6>
+          </div>
+
+
+        </div>
+
+        <!-- list group -->
+        <div class="my-16">
+          <h3 class="text-2xl font-bold mb-3">Բաժիններ</h3>
+          <div class="md:flex lg:flex gap-4">
+            <a href="It.html" class="group ">
+              <div
+                class="items-center mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300 pl-2  pr-6 rounded-full py-2">
+                <div
+                  class="group-hover:bg-red-100 ease-out duration-300 flex justify-center items-center rounded-full  w-10 h-10">
+                  <svg class="h-6 w-6 text-rose-500" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <rect x="3" y="15" width="6" height="6" rx="2" />
+                    <rect x="15" y="15" width="6" height="6" rx="2" />
+                    <rect x="9" y="3" width="6" height="6" rx="2" />
+                    <path d="M6 15v-1a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v1" />
+                    <line x1="12" y1="9" x2="12" y2="12" />
+                  </svg>
+                </div>
+                <span class="pl-2  font-bold   text-gray-700">Այ Թի</span>
+              </div>
+            </a>
+
+            <a href="#" class="group ">
+              <div
+                class="items-center mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300 pl-2  pr-6 rounded-full py-2">
+                <div
+                  class="group-hover:bg-red-100 ease-out duration-300 flex justify-center items-center rounded-full  w-10 h-10">
+                  <svg class="h-7 w-7 text-blue-500 " width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <circle cx="7" cy="17" r="2" />
+                    <circle cx="17" cy="17" r="2" />
+                    <path d="M5 17h-2v-6l2-5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" />
+                  </svg>
+                </div>
+                <span class="pl-2  font-bold   text-gray-700">Ավտո, տրանսպորտ</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+        <!-- list group -->
+        <div class="my-16">
+          <h3 class="text-2xl font-bold mb-3">Գործունեություն</h3>
+          <div class="md:flex lg:flex gap-4">
+            <a href="It.html" class="group ">
+              <div
+                class="items-center  mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-5 py-3">
+                <span class=" font-bold   text-gray-700">Այ Թի</span>
+              </div>
+            </a>
+            <a href="It.html" class="group ">
+              <div
+                class="items-center  mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-5 py-3">
+                <span class=" font-bold   text-gray-700">Ավտո, տրանսպորտ</span>
+              </div>
+            </a>
+            <a href="It.html" class="group ">
+              <div
+                class="items-center  mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-5 py-3">
+                <span class=" font-bold   text-gray-700">Այ Թի</span>
+              </div>
+            </a>
+            <a href="It.html" class="group ">
+              <div
+                class="items-center  mb-3 md:mb-0 lg:mb-0 flex bg-white border border-gray-100 shadow-md group-hover:shadow-lg  ease-out duration-300  rounded-full px-5 py-3">
+                <span class=" font-bold   text-gray-700">Ավտո, տրանսպորտ</span>
+              </div>
+            </a>
+
+          </div>
+        </div>
+        <!-- Reviews  -->
+        <div class="mt-12 md:mt-24 lg:mt-40 ">
+          <h3 class="mb-3 text-2xl font-bold">Reviews </h3>
+          <div class="border-y   border-gray-100">
+
+            <div class="py-5 border-b border-gray-100">
+
+              <div class="flex justify-between ">
+                <div class="flex">
+                  <img class="rounded-full h-16 w-16  mr-3 " src="https://finder.createx.studio/img/avatars/03.jpg"
+                    alt="">
+                  <div>
+                    <h5 class="text-lg font-bold">Name Surname</h5>
+                    <div class="flex items-center pt-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <span class="text-lg text-gray-500">
+                  Jan 17, 2021
+                </span>
+              </div>
+
+              <div class="mt-3">
+                <p class="text-lg text-gray-500  ">
+                  Elementum ut quam tincidunt egestas vitae elit, hendrerit. Ullamcorper nulla amet lobortis elit, nibh
+                  condimentum enim. Aliquam felis nisl tellus sodales lectus dictum tristique proin vitae. Odio
+                  fermentum
+                  viverra tortor quis.
+                </p>
+              </div>
+            </div>
+
+            <div class="py-5 border-b border-gray-100">
+
+              <div class="flex justify-between ">
+                <div class="flex">
+                  <img class="rounded-full h-16 w-16  mr-3 " src="https://finder.createx.studio/img/avatars/03.jpg"
+                    alt="">
+                  <div>
+                    <h5 class="text-lg font-bold">Name Surname</h5>
+                    <div class="flex items-center pt-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <span class="text-lg text-gray-500">
+                  Jan 17, 2021
+                </span>
+              </div>
+
+              <div class="mt-3">
+                <p class="text-lg text-gray-500  ">
+                  Elementum ut quam tincidunt egestas vitae elit, hendrerit. Ullamcorper nulla amet lobortis elit, nibh
+                  condimentum enim. Aliquam felis nisl tellus sodales lectus dictum tristique proin vitae. Odio
+                  fermentum
+                  viverra tortor quis.
+                </p>
+              </div>
+            </div>
+
+            <div class="py-5 border-b border-gray-100">
+
+              <div class="flex justify-between ">
+                <div class="flex">
+                  <img class="rounded-full h-16 w-16  mr-3 " src="https://finder.createx.studio/img/avatars/03.jpg"
+                    alt="">
+                  <div>
+                    <h5 class="text-lg font-bold">Name Surname</h5>
+                    <div class="flex items-center pt-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-yellow-500" viewBox="0 0 20 20"
+                        fill="currentColor">
+                        <path
+                          d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+                <span class="text-lg text-gray-500">
+                  Jan 17, 2021
+                </span>
+              </div>
+
+              <div class="mt-3">
+                <p class="text-lg text-gray-500  ">
+                  Elementum ut quam tincidunt egestas vitae elit, hendrerit. Ullamcorper nulla amet lobortis elit, nibh
+                  condimentum enim. Aliquam felis nisl tellus sodales lectus dictum tristique proin vitae. Odio
+                  fermentum
+                  viverra tortor quis.
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="w-full flex justify-end">
+            <button href="#" data-bs-toggle="modal" data-bs-target="#exampleModalCenteredScrollable"
+              class=" rounded-full my-5  px-6 py-2  border-2 flex items-center font-bold  border-red-600 hover:bg-white hover:text-red-600 ease-in-out duration-300 bg-red-600 text-white ">
+              Add Review
+            </button>
+          </div>
+
+          <!-- review modal -->
+
+          <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+            id="exampleModalCenteredScrollable" tabindex="-1" aria-labelledby="exampleModalCenteredScrollable"
+            aria-modal="true" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable relative w-auto pointer-events-none">
+              <div
+                class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+                <div
+                  class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+                  <h5 class="text-xl font-medium leading-normal text-gray-800" id="exampleModalCenteredScrollableLabel">
+                    Leave a review
+                  </h5>
+                  <!-- Cancel Button -->
+                  <button type="button"
+                    class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+                    data-bs-dismiss="modal" aria-label="Close">
+                  </button>
+                </div>
+                <!-- Modal Form -->
+                <div class="modal-body relative p-8">
+                  <form>
+                    <div class="form-group mb-6">
+                      <label class="text-lg text-gray-500" for="name">Name <span class="text-red-500">*</span></label>
+                      <input type="text"
+                        class="form-control block w-full px-3 py-3 text-base font-normal text-gray-700 bg-white border rounded-xl  focus:border-none outline-none focus:outline-none"
+                        id="exampleInput7" placeholder="Name">
+                    </div>
+                    <div class="form-group mb-6">
+                      <label class="text-lg text-gray-500" for="name">Email <span class="text-red-500">*</span></label>
+                      <input type="email"
+                        class=" block w-full px-3 py-3 text-base font-normal text-gray-700 bg-white border rounded-xl  focus:border-none outline-none focus:outline-none"
+                        id="exampleInput8" placeholder="Email address">
+                    </div>
+                    <div class="form-group mb-6">
+                      <label class="text-lg text-gray-500" for="name">Rating <span class="text-red-500">*</span></label>
+                      <select id="countries"
+                        class="  block w-full px-3 py-3 text-base font-normal text-gray-700 bg-white border rounded-xl outline-none focus:outline-none">
+                        <option>1 Star</option>
+                        <option>2 Star</option>
+                        <option>3 Star</option>
+                        <option>4 Star</option>
+                        <option>5 Star</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group mb-6">
+                      <label class="text-lg text-gray-500" for="name">Review <span class="text-red-500">*</span></label>
+                      <textarea
+                        class=" form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white border rounded  focus:border-none outline-none focus:outline-none"
+                        id="exampleFormControlTextarea13" rows="3" placeholder="Message"> </textarea>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
+
+                  <button href="#"
+                    class="rounded-full   px-6 py-2  border-2 flex items-center font-bold  border-red-600 hover:bg-white hover:text-red-600 ease-in-out duration-300 bg-red-600 text-white ">
+                    Ուղարկել
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Right part -->
+
+      <div class="ml-4">
+        <div class="sticky-top">
+          <div class=" bg-gray-50 shadow-lg p-8 rounded-xl border border-gray-100">
+            <div class="">
+              <h3 class=" mb-2  font-bold text-2xl pb-2 border-b border-gray-100 ">Contacts</h3>
+
+              <div class="mt-5 border-b pb-2 border-gray-100  mb-3">
+                <h4 class="mb-2 font-bold">Գլխամաս</h4>
+                <ul class=" ">
+                  <!-- location -->
+                  <li class="mb-2  ">
+                    <a href="#" class="flex items-center group">
+                      <svg class="h-5 w-5 group-hover:text-red-500 ease-in-out duration-300  text-rose-600 mr-1"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      <span
+                        class="group-hover:text-red-500 ease-in-out duration-300 text-gray-700 font-medium text-lg">Yerevan,
+                        Abovyan str. </span>
+                    </a>
+                  </li>
+                  <!-- Telephone -->
+                  <li class="mb-2">
+                    <a href="tel:+374(93)66666"
+                      class="text-gray-700 font-medium text-lg flex items-center group hover:text-red-500 ease-in-out duration-300">
+                      <svg class="group-hover:text-red-500 ease-in-out duration-300 h-5 w-5 text-rose-600 mr-1"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path
+                          d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                        <path d="M15 7a2 2 0 0 1 2 2" />
+                        <path d="M15 3a6 6 0 0 1 6 6" />
+                      </svg>
+                      +374(99)99-99-99
+                    </a>
+                  </li>
+                  <!-- Email -->
+                  <li class="mb-2">
+                    <a href="mailto:@example.com"
+                      class="text-gray-600  font-medium text-lg flex items-center group hover:text-red-500 ease-in-out duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 text-rose-600 mr-1 group-hover:text-red-500 ease-in-out duration-300" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                      </svg>
+                      Someone@gmail.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-5 border-b pb-2 border-gray-100  mb-3">
+                <h4 class="mb-2 font-bold">Հասարակության հետ կապերի բաժին</h4>
+                <ul class=" ">
+                  <!-- location -->
+                  <li class="mb-2  ">
+                    <a href="#" class="flex items-center group">
+                      <svg class="h-5 w-5 group-hover:text-red-500 ease-in-out duration-300  text-rose-600 mr-1"
+                        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      <span
+                        class="group-hover:text-red-500 ease-in-out duration-300 text-gray-700 font-medium text-lg">Yerevan,
+                        Abovyan str. </span>
+                    </a>
+                  </li>
+                  <!-- Telephone -->
+                  <li class="mb-2">
+                    <a href="tel:+374(93)66666"
+                      class="text-gray-700 font-medium text-lg flex items-center group hover:text-red-500 ease-in-out duration-300">
+                      <svg class="group-hover:text-red-500 ease-in-out duration-300 h-5 w-5 text-rose-600 mr-1"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path
+                          d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                        <path d="M15 7a2 2 0 0 1 2 2" />
+                        <path d="M15 3a6 6 0 0 1 6 6" />
+                      </svg>
+                      +374(99)99-99-99
+                    </a>
+                  </li>
+                  <!-- Email -->
+                  <li class="mb-2">
+                    <a href="mailto:@example.com"
+                      class="text-gray-600  font-medium text-lg flex items-center group hover:text-red-500 ease-in-out duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 text-rose-600 mr-1 group-hover:text-red-500 ease-in-out duration-300" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                      </svg>
+                      Someone@gmail.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="mt-5 border-b pb-2 border-gray-200  mb-3">
+                <h4 class="mb-2 font-bold">Վաճառքների բաժին</h4>
+                <ul class=" ">
+
+                  <!-- Telephone -->
+                  <li class="mb-2">
+                    <a href="tel:+374(93)66666"
+                      class="text-gray-700 font-medium text-lg flex items-center group hover:text-red-500 ease-in-out duration-300">
+                      <svg class="group-hover:text-red-500 ease-in-out duration-300 h-5 w-5 text-rose-600 mr-1"
+                        width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <path
+                          d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+                        <path d="M15 7a2 2 0 0 1 2 2" />
+                        <path d="M15 3a6 6 0 0 1 6 6" />
+                      </svg>
+                      +374(99)99-99-99
+                    </a>
+                  </li>
+                  <!-- Email -->
+                  <li class="mb-2">
+                    <a href="mailto:@example.com"
+                      class="text-gray-600  font-medium text-lg flex items-center group hover:text-red-500 ease-in-out duration-300">
+                      <svg xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5 text-rose-600 mr-1 group-hover:text-red-500 ease-in-out duration-300" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
+                      </svg>
+                      Someone@gmail.com
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+
+
+              <div class="flex my-8 items-center">
+                <h4 class="mr-3  text-xl font-bold">Follow:</h4>
+                <ul class="flex justify-between">
+                  <li
+                    class="mr-2 flex justify-center items-center bg-white shadow-md border border-gray-100 rounded-full hover:bg-red-500 group  ease-in-out duration-300">
+                    <a href="#" class="p-2">
+                      <svg class="h-5 w-5 text-gray-700 group-hover:text-white" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="full" stroke-linejoin="full">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li
+                    class="flex justify-center items-center bg-white shadow-md border border-gray-100 rounded-full hover:bg-red-500 group  ease-in-out duration-500">
+                    <a href="#" class="p-2">
+                      <svg class="h-5 w-5 text-gray-800 group-hover:text-white" width="24" height="24"
+                        viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" />
+                        <rect x="4" y="4" width="16" height="16" rx="4" />
+                        <circle cx="12" cy="12" r="3" />
+                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class=" mt-8 w-full flex justify-center ">
+                <button href="#" data-bs-toggle="modal" data-bs-target="#send_msg"
+                  class="rounded-full   px-6 py-2  border-2 flex items-center font-bold  border-red-600 hover:bg-white hover:text-red-600 ease-in-out duration-300 bg-red-600 text-white ">
+                  Ուղարկել նամակ
+                </button>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- Map -->
+          <div class="mt-10">
+            <iframe class="w-full rounded-xl h-96"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24390.52619410823!2d44.4574919!3d40.1686553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2s!4v1648642920698!5m2!1sru!2s"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <!-- person -->
+          <div class="bg-gray-50 shadow-lg p-8 rounded-xl border border-gray-100 mt-10 ">
+            <div class="flex justify-between">
+              <div>
+                <h4 class="text-lg font-bold mt-1">Անուն Ազգանուն</h4>
+                <p class=" text-gray-600 mb-3">Տնօրեն</p>
+              </div>
+              <div class="w-16 h-16 overflow-hidden rounded-full  ">
+                <img class="w-full"
+                  src="https://tailwindcss.com/_next/static/media/sarah-dayan.a8ff3f1095a58085a82e3bb6aab12eb2.jpg"
+                  alt="img">
+              </div>
+            </div>
+        
+              <ul class="flex justify-center  mt-5 mb-8">
+                <li
+                  class="mr-2 flex justify-center items-center bg-white shadow-md border border-gray-100 rounded-full hover:bg-red-500 group  ease-in-out duration-300">
+                  <a href="#" class="p-2">
+                    <svg class="h-5 w-5 text-gray-700 group-hover:text-white" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="full" stroke-linejoin="full">
+                      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                  </a>
+                </li>
+                <li
+                  class="flex justify-center items-center bg-white shadow-md border border-gray-100 rounded-full hover:bg-red-500 group  ease-in-out duration-500">
+                  <a href="#" class="p-2">
+                    <svg class="h-5 w-5 text-gray-800 group-hover:text-white" width="24" height="24"
+                      viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+                      stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" />
+                      <rect x="4" y="4" width="16" height="16" rx="4" />
+                      <circle cx="12" cy="12" r="3" />
+                      <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <div class="text-center">
+              <a class="underline font-bold text-gray-600  " href="#">Գործարար հայուհի</a>
+            </div>
+              
+          </div>
+        
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Mobile Menu -->
+  <section>
+    <div
+      class="mobile-context bg-white border-t py-3 fixed-bottom xl:hidden lg:hidden md:hidden sm:block xs:block block px-8 drop-shadow-[0_-1px_10px_rgba(0,0,0,0.10)]">
+      <div class="flex justify-between">
+
+        <a href="#" type="button">
+          <svg class="h-8 w-8 text-gray-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+            stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" />
+            <polyline points="5 12 3 12 12 3 21 12 19 12" />
+            <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+            <rect x="10" y="12" width="4" height="4" />
+          </svg>
+        </a>
+
+        <a href="#" type="button">
+          <svg class="h-8 w-8 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </a>
+
+        <a href="#" type="button">
+          <svg class="h-8 w-8 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </a>
+
+        <a href="#" id="menuToggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight" aria-controls="mobile-menu" aria-expanded="false">
+          <svg class="h-8 w-8 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Start -->
+  <footer class="border-t border-red-600">
+    <div class="container px-2 py-12">
+      <div class="px-6 pt-6">
+        <div class="flex justify-between">
+          <img class="h-10" src="https://ladyblog.am/images/site/Ladyblog-logo2.svg" alt="img">
+          <!-- Icons -->
+          <div class="flex items-center">
+            <a href="#" class="flex items-center">
+              <svg class="h-6 w-6 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+              <span class="px-2 text-gray-800">Facebook</span>
+            </a>
+
+            <a href="#" class="flex items-center">
+              <svg class="h-8 w-8 text-pink-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <rect x="4" y="4" width="16" height="16" rx="4" />
+                <circle cx="12" cy="12" r="3" />
+                <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+              </svg>
+              <span class="px-2 text-gray-800">Instagram</span>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="lg:flex block justify-between items-center">
+          <div class="">
+            <h3 class="py-5 font-bold text-2xl">Եղեք տեղեկացված</h3>
+            <p class="text-gray-700">Ձեր կարծիքը շատ կարևոր է մեզ համար, և Ձեր կողմից առաջադրված ցանկացած հարց, առաջարկ
+              կամ դիտողություն
+              պարտադիր արձագանք կստանա:</p>
+          </div>
+
+          <div class="md:mb-6 ">
+            <input type="text" class="w-full  border-b border-gray-700 focus:outline-none py-2 px-1 text-sm"
+              placeholder="Էլ․ Հասցե">
+            <button href="#"
+              class="rounded-full my-5  px-6 py-2  border-2 flex items-center font-bold  border-red-600 hover:bg-white hover:text-red-600 ease-in-out duration-300 bg-red-600 text-white ">
+              Բաժանորդագրվել
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="bg-red-600 text-center ">
+      <div class="  pt-6 pb-3 text-white">
+        <ul class="lg:flex  inline justify-center">
+          <li class="px-2 ">
+            <a href="#">Կանոնակարգ՝ «Գրապահոց»</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Գաղտնիություն և Դրույթներ</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Նամակ Ձմեռ պապիկին</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Բալիկի սեռի որոշման աղյուսակներ</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Հղիության օրացույց</a>
+          </li>
+        </ul>
+
+        <ul class="block lg:flex   justify-center  mt-2">
+          <li class="px-2 ">
+            <a href="#">Գովազդի պայմաններ</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Հետադարձ կապ</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Գրանցում</a>
+          </li class="px-2 ">
+          <li class="px-2 ">
+            <a href="#">Հայ</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Eng</a>
+          </li>
+          <li class="px-2 ">
+            <a href="#">Рус</a>
+          </li>
+        </ul>
+        <p class="mt-5 border-t pt-2">Copyright © All rights reserved | Կայքը հանդիսանում է <a class=""
+            href="#">WebMagnet</a>-ի
+          նախագիծ</p>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!-- Send Message Modal -->
+  <div class="modal fade fixed top-0 left-0  hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+    id="send_msg" tabindex="-1" aria-labelledby="send_msgLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg relative w-auto pointer-events-none">
+      <div
+        class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+        <div
+          class="modal-header flex flex-shrink-0 items-center justify-between p-4 border-b border-gray-200 rounded-t-md">
+          <h5 class="text-xl font-medium leading-normal text-gray-800" id="send_msgLabel">Modal title</h5>
+          <button type="button"
+            class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none opacity-50 focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+            data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body relative p-4">
+          Modal body text goes here.
+        </div>
+        <div
+          class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
+          <button type="button" class="px-6
+         py-2.5
+         bg-purple-600
+         text-white
+         font-medium
+         text-xs
+         leading-tight
+         uppercase
+         rounded
+         shadow-md
+         hover:bg-purple-700 hover:shadow-lg
+         focus:bg-purple-700 focus:shadow-lg focus:outline-none focus:ring-0
+         active:bg-purple-800 active:shadow-lg
+         transition
+         duration-150
+         ease-in-out" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="px-6
+     py-2.5
+     bg-blue-600
+     text-white
+     font-medium
+     text-xs
+     leading-tight
+     uppercase
+     rounded
+     shadow-md
+     hover:bg-blue-700 hover:shadow-lg
+     focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0
+     active:bg-blue-800 active:shadow-lg
+     transition
+     duration-150
+     ease-in-out
+     ml-1">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../node_modules/tw-elements/dist/js/index.min.js"></script>
+</body>
+
+</html>
