@@ -470,15 +470,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .container {
   width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
 }
 
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
-    padding-right: 2rem;
-    padding-left: 2rem;
   }
 }
 
@@ -491,24 +487,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
-    padding-right: 4rem;
-    padding-left: 4rem;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
-    padding-right: 5rem;
-    padding-left: 5rem;
   }
 }
 
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
-    padding-right: 6rem;
-    padding-left: 6rem;
   }
 }
 
@@ -2365,6 +2355,20 @@ textarea.form-control.is-invalid {
   }
 }
 
+@media (min-width: 1536px){
+  .container {
+    max-width: 1536px !important;
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+}
+
+@media (min-width: 1436px){
+  .container {
+    max-width: 1336px !important;
+  }
+}
+
 /* @media (min-width: 1580px){
 .container {
     max-width: 1520px !important;
@@ -2486,14 +2490,6 @@ textarea.form-control.is-invalid {
 
 .right-6 {
   right: 1.5rem;
-}
-
-.right-64 {
-  right: 16rem;
-}
-
-.right-10 {
-  right: 2.5rem;
 }
 
 .z-20 {
@@ -2814,10 +2810,6 @@ textarea.form-control.is-invalid {
   width: 4rem;
 }
 
-.w-64 {
-  width: 16rem;
-}
-
 .max-w-full {
   max-width: 100%;
 }
@@ -2902,20 +2894,12 @@ textarea.form-control.is-invalid {
   overflow: hidden;
 }
 
-.overflow-x-auto {
-  overflow-x: auto;
-}
-
 .overflow-y-auto {
   overflow-y: auto;
 }
 
 .overflow-x-hidden {
   overflow-x: hidden;
-}
-
-.overflow-x-scroll {
-  overflow-x: scroll;
 }
 
 .whitespace-nowrap {
@@ -3849,10 +3833,6 @@ textarea.form-control.is-invalid {
     width: 66.666667%;
   }
 
-  .md\:grid-flow-col {
-    grid-auto-flow: column;
-  }
-
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -4014,16 +3994,8 @@ textarea.form-control.is-invalid {
     width: 66.666667%;
   }
 
-  .lg\:grid-flow-col {
-    grid-auto-flow: column;
-  }
-
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-
-  .lg\:flex-wrap {
-    flex-wrap: wrap;
   }
 
   .lg\:flex-nowrap {
