@@ -470,11 +470,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .container {
   width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media (min-width: 640px) {
   .container {
     max-width: 640px;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
@@ -487,18 +491,24 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
+    padding-right: 5rem;
+    padding-left: 5rem;
   }
 }
 
 @media (min-width: 1536px) {
   .container {
     max-width: 1536px;
+    padding-right: 6rem;
+    padding-left: 6rem;
   }
 }
 
@@ -2355,41 +2365,37 @@ textarea.form-control.is-invalid {
   }
 }
 
-@media (min-width: 1580px){
-  .container {
+/* @media (min-width: 1580px){
+.container {
     max-width: 1520px !important;
-  }
 }
-
+}
 @media (min-width: 1400px){
-  .container {
+.container {
     max-width: 1320px;
-  }
 }
-
+}
 @media (min-width: 1200px){
-  .container {
+.container {
     max-width: 1140px;
-  }
 }
-
+}
 @media (min-width: 992px){
-  .container {
+.container {
     max-width: 960px;
-  }
 }
-
+}
 @media (min-width: 768px){
-  .container {
+.container {
     max-width: 720px;
-  }
 }
-
+}
 @media (min-width: 576px){
-  .container {
+.container {
     max-width: 540px;
-  }
 }
+}
+ */
 
 .container {
   margin:0 auto;
@@ -2466,10 +2472,6 @@ textarea.form-control.is-invalid {
   right: 0.25rem;
 }
 
-.right-64 {
-  right: 16rem;
-}
-
 .right-2 {
   right: 0.5rem;
 }
@@ -2488,10 +2490,6 @@ textarea.form-control.is-invalid {
 
 .z-20 {
   z-index: 20;
-}
-
-.z-10 {
-  z-index: 10;
 }
 
 .order-1 {
@@ -3719,10 +3717,6 @@ textarea.form-control.is-invalid {
 }
 
 @media (min-width: 768px) {
-  .md\:absolute {
-    position: absolute;
-  }
-
   .md\:order-2 {
     order: 2;
   }
@@ -3888,10 +3882,6 @@ textarea.form-control.is-invalid {
 }
 
 @media (min-width: 1024px) {
-  .lg\:absolute {
-    position: absolute;
-  }
-
   .lg\:order-2 {
     order: 2;
   }
@@ -4021,11 +4011,6 @@ textarea.form-control.is-invalid {
     padding-right: 1.75rem;
   }
 
-  .lg\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
-
   .lg\:pl-2 {
     padding-left: 0.5rem;
   }
@@ -4083,11 +4068,6 @@ textarea.form-control.is-invalid {
   .xl\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
-  }
-
-  .xl\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 
   .xl\:pt-16 {

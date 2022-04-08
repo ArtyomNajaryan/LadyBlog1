@@ -4,7 +4,7 @@
 @layer components {
 
 
-@media (min-width: 1580px){
+/* @media (min-width: 1580px){
 .container {
     max-width: 1520px !important;
 }
@@ -34,7 +34,7 @@
     max-width: 540px;
 }
 }
-
+ */
 .container {
   margin:0 auto;
   padding: 0 25px;
