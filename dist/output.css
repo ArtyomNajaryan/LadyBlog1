@@ -2365,22 +2365,6 @@ textarea.form-control.is-invalid {
   }
 }
 
-@media (min-width: 1536px){
-  .container {
-      max-width: 1336px !important;
-      padding-right: 6rem;
-      padding-left: 6rem;
-  }
-}
-
-@media (min-width: 1836px){
-  .container {
-      max-width: 1536px !important;
-      padding-right: 6rem;
-      padding-left: 6rem;
-  }
-}
-
 /* @media (min-width: 1580px){
 .container {
     max-width: 1520px !important;
@@ -2506,6 +2490,10 @@ textarea.form-control.is-invalid {
 
 .right-64 {
   right: 16rem;
+}
+
+.right-10 {
+  right: 2.5rem;
 }
 
 .z-20 {
@@ -2826,6 +2814,10 @@ textarea.form-control.is-invalid {
   width: 4rem;
 }
 
+.w-64 {
+  width: 16rem;
+}
+
 .max-w-full {
   max-width: 100%;
 }
@@ -2910,12 +2902,20 @@ textarea.form-control.is-invalid {
   overflow: hidden;
 }
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .whitespace-nowrap {
@@ -3861,6 +3861,10 @@ textarea.form-control.is-invalid {
     flex-direction: row;
   }
 
+  .md\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .md\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
@@ -4016,6 +4020,14 @@ textarea.form-control.is-invalid {
 
   .lg\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .lg\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
   .lg\:py-10 {
