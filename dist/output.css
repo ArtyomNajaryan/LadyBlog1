@@ -2355,9 +2355,40 @@ textarea.form-control.is-invalid {
   }
 }
 
+@media (max-width: 1580px)
+.container {
+  max-width: 1420px;
+}
+
+@media (max-width: 1400px)
+.container {
+  max-width: 1320px;
+}
+
+@media (max-width: 1200px)
+.container {
+  max-width: 1140px;
+}
+
+@media (min-width: 992px)
+.container {
+  max-width: 960px;
+}
+
+@media (min-width: 768px)
+.container {
+  max-width: 720px;
+}
+
+@media (min-width: 576px)
+.container {
+  max-width: 540px;
+}
+
 .container {
   margin:0 auto;
-  padding: 0 25px
+  padding: 0 25px;
+  max-width:100% m !important;
 }
 
 /* ... */
@@ -2458,16 +2489,16 @@ textarea.form-control.is-invalid {
   z-index: 10;
 }
 
-.order-2 {
-  order: 2;
-}
-
 .order-1 {
   order: 1;
 }
 
 .order-3 {
   order: 3;
+}
+
+.order-2 {
+  order: 2;
 }
 
 .col-span-4 {
@@ -2532,8 +2563,8 @@ textarea.form-control.is-invalid {
   margin-right: -0.5rem;
 }
 
-.mr-2 {
-  margin-right: 0.5rem;
+.mr-1 {
+  margin-right: 0.25rem;
 }
 
 .mb-24 {
@@ -2560,10 +2591,6 @@ textarea.form-control.is-invalid {
   margin-bottom: 2.5rem;
 }
 
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
 .mt-8 {
   margin-top: 2rem;
 }
@@ -2582,6 +2609,10 @@ textarea.form-control.is-invalid {
 
 .mr-3 {
   margin-right: 0.75rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .mr-0 {
@@ -2616,16 +2647,8 @@ textarea.form-control.is-invalid {
   margin-bottom: 1.25rem;
 }
 
-.mt-12 {
-  margin-top: 3rem;
-}
-
-.mt-3 {
-  margin-top: 0.75rem;
-}
-
-.ml-4 {
-  margin-left: 1rem;
+.ml-0 {
+  margin-left: 0px;
 }
 
 .mt-1 {
@@ -2636,16 +2659,16 @@ textarea.form-control.is-invalid {
   margin-bottom: 2rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
-}
-
-.ml-0 {
-  margin-left: 0px;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
 }
 
 .box-content {
@@ -3107,9 +3130,19 @@ textarea.form-control.is-invalid {
   padding-right: 1.75rem;
 }
 
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .py-8 {
@@ -3137,11 +3170,6 @@ textarea.form-control.is-invalid {
   padding-bottom: 3rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -3150,11 +3178,6 @@ textarea.form-control.is-invalid {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .py-1\.5 {
@@ -3711,6 +3734,10 @@ textarea.form-control.is-invalid {
     grid-column: span 1 / span 1;
   }
 
+  .md\:mr-2 {
+    margin-right: 0.5rem;
+  }
+
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -3741,10 +3768,6 @@ textarea.form-control.is-invalid {
 
   .md\:ml-4 {
     margin-left: 1rem;
-  }
-
-  .md\:mr-2 {
-    margin-right: 0.5rem;
   }
 
   .md\:block {
@@ -3880,6 +3903,10 @@ textarea.form-control.is-invalid {
     grid-column: span 1 / span 1;
   }
 
+  .lg\:mr-2 {
+    margin-right: 0.5rem;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -3900,20 +3927,12 @@ textarea.form-control.is-invalid {
     margin-right: 0.75rem;
   }
 
-  .lg\:mt-40 {
-    margin-top: 10rem;
-  }
-
   .lg\:ml-4 {
     margin-left: 1rem;
   }
 
   .lg\:mt-16 {
     margin-top: 4rem;
-  }
-
-  .lg\:mr-2 {
-    margin-right: 0.5rem;
   }
 
   .lg\:block {
@@ -3972,14 +3991,6 @@ textarea.form-control.is-invalid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
-  .lg\:flex-wrap {
-    flex-wrap: wrap;
-  }
-
-  .lg\:flex-nowrap {
-    flex-wrap: nowrap;
-  }
-
   .lg\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -3988,11 +3999,6 @@ textarea.form-control.is-invalid {
   .lg\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
-  }
-
-  .lg\:py-0 {
-    padding-top: 0px;
-    padding-bottom: 0px;
   }
 
   .lg\:py-6 {
@@ -4008,6 +4014,11 @@ textarea.form-control.is-invalid {
   .lg\:px-7 {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+  }
+
+  .lg\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .lg\:pl-2 {
@@ -4039,15 +4050,6 @@ textarea.form-control.is-invalid {
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-}
-
-@media (min-width: 768px) {
-  @media (min-width: 1024px) {
-    .md\:lg\:px-7 {
-      padding-left: 1.75rem;
-      padding-right: 1.75rem;
-    }
   }
 }
 
